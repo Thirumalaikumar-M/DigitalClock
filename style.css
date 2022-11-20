@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.clock{
+    width: 700px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 25px rgba(255, 255, 255, 0.2);
+    border: 5px solid rgba(255, 255, 255, 0.10);
+    border-radius: 20px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+.clock h2{
+    font-size: 6em;
+    color: #fff;
+}
+.clock h2:nth-child(odd){
+    padding: 5px 15px;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 25px rgba(255, 255, 255, 0.2);
+    border: 5px solid rgba(255, 255, 255, 0.10);
+    border-radius: 10px;
+}
+.clock h2:last-child{
+    position: relative;
+    top: -37px;
+    font-size: 3em;
+    font-weight: 700;
+    padding: 10px;
+}
+bgvideo{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
